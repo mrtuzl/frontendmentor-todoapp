@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/frontendmentor-todoapp/static/css/main.ecee49a0.css",
+    "main.js": "/frontendmentor-todoapp/static/js/main.a581a57a.js",
+    "static/js/787.97a945da.chunk.js": "/frontendmentor-todoapp/static/js/787.97a945da.chunk.js",
+    "static/media/bg-desktop-light.jpg": "/frontendmentor-todoapp/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/bg-desktop-dark.jpg": "/frontendmentor-todoapp/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
+    "index.html": "/frontendmentor-todoapp/index.html",
+    "static/media/icon-sun.svg": "/frontendmentor-todoapp/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
+    "static/media/icon-moon.svg": "/frontendmentor-todoapp/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "main.ecee49a0.css.map": "/frontendmentor-todoapp/static/css/main.ecee49a0.css.map",
+    "main.a581a57a.js.map": "/frontendmentor-todoapp/static/js/main.a581a57a.js.map",
+    "787.97a945da.chunk.js.map": "/frontendmentor-todoapp/static/js/787.97a945da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecee49a0.css",
+    "static/js/main.a581a57a.js"
+  ]
+}
