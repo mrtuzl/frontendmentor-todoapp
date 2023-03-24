@@ -1,0 +1,317 @@
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+$font: 'Josefin Sans', sans-serif;
+//Primary colors
+$cbg:  linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+$bblue: hsl(220, 98%, 61%);
+//Dark mode colors
+$vdblue: hsl(235, 21%, 11%);
+$vddblue: hsl(235, 24%, 19%);
+$lgblue: hsl(234, 39%, 85%);
+$lbbluehover: hsl(236, 33%, 92%);
+$dgblue: hsl(234, 11%, 52%);
+$vdgblue: hsl(233, 14%, 35%);
+$vdgb2: hsl(237, 14%, 26%);
+//Light mode colors
+$vlgrayLight: hsl(0, 0%, 98%);
+$vlgblueLight: hsl(236, 33%, 92%);
+$lgblueLight: hsl(233, 11%, 84%);
+$dgblueLight: hsl(236, 9%, 61%);
+$vdgblueLight: hsl(235, 19%, 35%);
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html, body{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  
+}
+.darkBg{
+  background-color: $vdblue;
+  background-image: url("./images/bg-desktop-dark.jpg");
+}
+.lightBg{
+  background-color: $vlgrayLight;
+  background-image: url("./images/bg-desktop-light.jpg");
+  
+}
+.dark{
+  background-color: $vddblue;
+  color: $lgblue;
+  border-bottom: 1px solid $vdgb2;
+}
+.light{
+  background-color: white;
+  color: $vdblue;
+  border-bottom: 1px solid $lgblueLight;
+}
+.darkBtn{
+  background-color: $vddblue;
+  color: $lgblue;
+  border-bottom: 1px solid $vdgb2;
+}
+.lightBtn{
+  background-color: white;
+  color: $vdblue;
+  border-bottom: 1px solid $lgblueLight;
+}
+.darkBtn:hover{
+  color: $lgblue !important;
+  font-weight: bold;
+}
+.lightBtn:hover{
+  color: $vddblue !important;
+  font-weight: bold;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat:no-repeat;
+  background-size: 100%;
+  color: white;
+ 
+  .header{
+    width: 460px;
+    margin-top: 12%;
+    margin-bottom: 20px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+      font-family: $font;
+      font-size: 2.5rem;
+      letter-spacing: 10px;
+    }
+    img{
+      cursor: pointer;
+    }
+  }
+  .form{
+    width: 460px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: $font;
+    .inpt{
+      width: 400px;
+      height: 50px;
+      border: none;
+      border-radius: 5px 0px 0px 5px;
+      padding-left: 30px;
+      font-family: $font;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+   
+    .btn{
+      border: none;
+      border-radius: 0px 5px 5px 0px;
+      color: $dgblue;
+      width: 60px;
+      height: 50px;
+      font-family: $font;
+      cursor: pointer;
+    }
+    .btn-active{
+      span{
+        color: $vlgrayLight;
+      }
+ 
+    }
+    ::placeholder{
+      color: $dgblue;
+    }
+  }
+ 
+  .list{
+  font-family: $font;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    ul{
+      display: flex;
+      flex-direction: column;
+      border: none;
+      li:first-child{
+        border-radius: 5px 5px 0px 0px;
+      }
+      .li{
+        width: 460px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        height: 55px;
+        font-family: $font;
+        font-weight: 500;
+        font-size: 1rem;
+        padding-left: 30px;
+        cursor: pointer;
+      }
+      .delete{
+        border: none;
+        border-radius: 5px;
+        color: $dgblue;
+        width: 55px;
+        height: 50px;
+        font-family: $font;
+        text-decoration: none ;
+        cursor: pointer;
+      }
+    }
+    .info{
+      width: 460px;
+      padding: 15px 10px 15px 20px;
+      border-radius: 5px;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      .btn{
+        border: none;
+        color: $dgblue;
+        font-family: $font;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0px 5px 0px 5px;
+      }
+      button:focus{
+          color: $bblue;
+      }
+      .span{
+        border: none;
+        color: $dgblue;
+        font-family: $font;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .mobileButtons{
+  visibility: hidden;
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 300px;
+  border: none;
+    button{
+      border: none;
+      padding: 5px;
+      color: $dgblue;
+      font-family: $font;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+  }
+}
+
+.marked{
+  text-decoration: line-through;
+  color: $dgblue;
+}
+
+@media screen and (max-width:1250px) {
+
+  .header{
+    margin-top: 8% !important;
+  }
+
+}
+
+@media screen and (max-width:850px) {
+
+  .header{
+    margin-top: 4% !important;
+  }
+
+}
+
+@media screen and (max-width:650px) {
+
+  .container {
+    background-size: 120% !important;
+    .info{
+      .buttons{
+      visibility: hidden;
+      }
+    }
+    .mobileButtons{
+      visibility:visible;
+      width: 460px !important;
+    }
+}
+}
+
+@media screen and (max-width:500px) {
+
+  .container {
+    background-size: 150% !important;
+    .header{
+      width: 375px;
+    }
+    .form{
+      width: 375px;
+      .inpt{
+        width: 315px;
+      }}
+      .list{
+        width: 375px !important;
+        .li{
+          width: 375px !important;
+        }}
+        .info{
+          width: 375px !important;
+        }
+        .mobileButtons{
+          visibility:visible;
+          width: 375px !important;
+        }
+}
+}
+
+@media screen and (max-width:375px) {
+
+  .container {
+    background-size: 180% !important;
+    .header{
+      width: 350px;
+    }
+    .form{
+      width: 350px;
+      
+      .inpt{
+        width: 295px;
+      }}
+      .list{
+        width: 350px !important;
+        .li{
+          width: 350px !important;
+        }}
+        .info{
+          width: 350px !important;
+          padding: 15px 5px 15px 10px !important;
+          .btn{
+            padding: 0px 2px 0px 2px !important;
+          }
+        }
+        .mobileButtons{
+          visibility:visible;
+          width: 350px !important;
+        }
+}
+}

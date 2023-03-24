@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.darkBg {
+  background-color: hsl(235deg, 21%, 11%);
+  background-image: url("./images/bg-desktop-dark.jpg");
+}
+
+.lightBg {
+  background-color: hsl(0deg, 0%, 98%);
+  background-image: url("./images/bg-desktop-light.jpg");
+}
+
+.dark {
+  background-color: hsl(235deg, 24%, 19%);
+  color: hsl(234deg, 39%, 85%);
+  border-bottom: 1px solid hsl(237deg, 14%, 26%);
+}
+
+.light {
+  background-color: white;
+  color: hsl(235deg, 21%, 11%);
+  border-bottom: 1px solid hsl(233deg, 11%, 84%);
+}
+
+.darkBtn {
+  background-color: hsl(235deg, 24%, 19%);
+  color: hsl(234deg, 39%, 85%);
+  border-bottom: 1px solid hsl(237deg, 14%, 26%);
+}
+
+.lightBtn {
+  background-color: white;
+  color: hsl(235deg, 21%, 11%);
+  border-bottom: 1px solid hsl(233deg, 11%, 84%);
+}
+
+.darkBtn:hover {
+  color: hsl(234deg, 39%, 85%) !important;
+  font-weight: bold;
+}
+
+.lightBtn:hover {
+  color: hsl(235deg, 24%, 19%) !important;
+  font-weight: bold;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+}
+.container .header {
+  width: 460px;
+  margin-top: 12%;
+  margin-bottom: 20px;
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+}
+.container .header img {
+  cursor: pointer;
+}
+.container .form {
+  width: 460px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.container .form .inpt {
+  width: 400px;
+  height: 50px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.container .form .btn {
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  color: hsl(234deg, 11%, 52%);
+  width: 60px;
+  height: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+.container .form .btn-active span {
+  color: hsl(0deg, 0%, 98%);
+}
+.container .form ::-moz-placeholder {
+  color: hsl(234deg, 11%, 52%);
+}
+.container .form :-ms-input-placeholder {
+  color: hsl(234deg, 11%, 52%);
+}
+.container .form ::placeholder {
+  color: hsl(234deg, 11%, 52%);
+}
+.container .list {
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .list ul {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.container .list ul li:first-child {
+  border-radius: 5px 5px 0px 0px;
+}
+.container .list ul .li {
+  width: 460px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.container .list ul .delete {
+  border: none;
+  border-radius: 5px;
+  color: hsl(234deg, 11%, 52%);
+  width: 55px;
+  height: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+.container .list .info {
+  width: 460px;
+  padding: 15px 10px 15px 20px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+.container .list .info .btn {
+  border: none;
+  color: hsl(234deg, 11%, 52%);
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0px 5px 0px 5px;
+}
+.container .list .info button:focus {
+  color: hsl(220deg, 98%, 61%);
+}
+.container .list .info .span {
+  border: none;
+  color: hsl(234deg, 11%, 52%);
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.container .mobileButtons {
+  visibility: hidden;
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 300px;
+  border: none;
+}
+.container .mobileButtons button {
+  border: none;
+  padding: 5px;
+  color: hsl(234deg, 11%, 52%);
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.marked {
+  text-decoration: line-through;
+  color: hsl(234deg, 11%, 52%);
+}
+
+@media screen and (max-width: 1250px) {
+  .header {
+    margin-top: 8% !important;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header {
+    margin-top: 4% !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    background-size: 120% !important;
+  }
+  .container .info .buttons {
+    visibility: hidden;
+  }
+  .container .mobileButtons {
+    visibility: visible;
+    width: 460px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    background-size: 150% !important;
+  }
+  .container .header {
+    width: 375px;
+  }
+  .container .form {
+    width: 375px;
+  }
+  .container .form .inpt {
+    width: 315px;
+  }
+  .container .list {
+    width: 375px !important;
+  }
+  .container .list .li {
+    width: 375px !important;
+  }
+  .container .info {
+    width: 375px !important;
+  }
+  .container .mobileButtons {
+    visibility: visible;
+    width: 375px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    background-size: 180% !important;
+  }
+  .container .header {
+    width: 350px;
+  }
+  .container .form {
+    width: 350px;
+  }
+  .container .form .inpt {
+    width: 295px;
+  }
+  .container .list {
+    width: 350px !important;
+  }
+  .container .list .li {
+    width: 350px !important;
+  }
+  .container .info {
+    width: 350px !important;
+    padding: 15px 5px 15px 10px !important;
+  }
+  .container .info .btn {
+    padding: 0px 2px 0px 2px !important;
+  }
+  .container .mobileButtons {
+    visibility: visible;
+    width: 350px !important;
+  }
+}/*# sourceMappingURL=App.css.map */
