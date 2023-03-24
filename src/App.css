@@ -113,34 +113,32 @@ html, body {
   font-family: "Josefin Sans", sans-serif;
   cursor: pointer;
 }
-.container .form .btn-active span {
-  color: hsl(0deg, 0%, 98%);
-}
-.container .form ::-moz-placeholder {
+.container ::-moz-placeholder {
   color: hsl(234deg, 11%, 52%);
 }
-.container .form :-ms-input-placeholder {
+.container :-ms-input-placeholder {
   color: hsl(234deg, 11%, 52%);
 }
-.container .form ::placeholder {
+.container ::placeholder {
   color: hsl(234deg, 11%, 52%);
 }
-.container .list {
+
+.list {
   font-family: "Josefin Sans", sans-serif;
   border-radius: 5px 5px 0px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.container .list ul {
+.list ul {
   display: flex;
   flex-direction: column;
   border: none;
 }
-.container .list ul li:first-child {
+.list ul li:first-child {
   border-radius: 5px 5px 0px 0px;
 }
-.container .list ul .li {
+.list ul .li {
   width: 460px;
   list-style: none;
   display: flex;
@@ -153,7 +151,7 @@ html, body {
   padding-left: 30px;
   cursor: pointer;
 }
-.container .list ul .delete {
+.list ul .delete {
   border: none;
   border-radius: 5px;
   color: hsl(234deg, 11%, 52%);
@@ -163,7 +161,7 @@ html, body {
   text-decoration: none;
   cursor: pointer;
 }
-.container .list .info {
+.list .info {
   width: 460px;
   padding: 15px 10px 15px 20px;
   border-radius: 5px;
@@ -171,7 +169,7 @@ html, body {
   display: flex;
   justify-content: space-between;
 }
-.container .list .info .btn {
+.list .info .btn {
   border: none;
   color: hsl(234deg, 11%, 52%);
   font-family: "Josefin Sans", sans-serif;
@@ -179,17 +177,18 @@ html, body {
   cursor: pointer;
   padding: 0px 5px 0px 5px;
 }
-.container .list .info button:focus {
+.list .info button:focus {
   color: hsl(220deg, 98%, 61%);
 }
-.container .list .info .span {
+.list .info .span {
   border: none;
   color: hsl(234deg, 11%, 52%);
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   font-size: 0.9rem;
 }
-.container .mobileButtons {
+
+.mobileButtons {
   visibility: hidden;
   margin-top: 20px;
   height: 50px;
@@ -199,7 +198,7 @@ html, body {
   width: 300px;
   border: none;
 }
-.container .mobileButtons button {
+.mobileButtons button {
   border: none;
   padding: 5px;
   color: hsl(234deg, 11%, 52%);

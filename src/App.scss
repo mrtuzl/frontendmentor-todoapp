@@ -124,11 +124,6 @@ html, body{
       font-family: $font;
       cursor: pointer;
     }
-    .btn-active{
-      span{
-        color: $vlgrayLight;
-      }
- 
     }
     ::placeholder{
       color: $dgblue;
@@ -218,7 +213,7 @@ html, body{
     }
   
   }
-}
+
 
 .marked{
   text-decoration: line-through;
